@@ -1,0 +1,131 @@
+html, body {
+  margin: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.layout {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 300px;
+  background: #fff;
+  border-right: 1px solid #ddd;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar.dark {
+  width: 300px;
+  background-color: #000000;
+  color: #ffffff;
+  border-right: 1px solid #ddd;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar button,
+.sidebar input,
+.sidebar div {
+  color: inherit;
+}
+
+.sidebar.dark button {
+  background-color: #222;
+  color: #fff;
+  border: 1px solid #444;
+}
+
+.search {
+  padding: 10px;
+  margin-bottom: 8px;
+}
+
+.city {
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.filters button {
+  padding: 10px;
+  border: 2px solid #000;
+  background: #fff;
+  margin-bottom: 10px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.auth {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.auth button {
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#map {
+  flex: 1;
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal.hidden {
+  display: none;
+}
+
+.box {
+  background: #fff;
+  padding: 20px;
+  width: 320px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #333;
+}
+
+.close:hover {
+  color: #000;
+}
+
+.themes button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background-color: #ffffff;
+  cursor: pointer;
+  margin-top: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}

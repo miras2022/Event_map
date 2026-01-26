@@ -1,0 +1,48 @@
+<!-- index.html (fixed) -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Events Map</title>
+
+  <!-- СТИЛИ ПРОЕКТА -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="layout">
+  <aside class="sidebar">
+    <input class="search" placeholder="Поиск событий">
+    <div class="city">Астана</div>
+
+    <div class="filters">
+      <button>События на вечер</button>
+      <button>События на неделю</button>
+      <button>События на выходные</button>
+    </div>
+
+    <div class="controls">
+      <select id="transport">
+        <option value="driving">Авто</option>
+        <option value="walking">Пешком</option>
+      </select>
+      <button id="routeButton">Построить маршрут</button>
+      <button id="resetButton" disabled>Сбросить</button>
+    </div>
+    <div class="themes">
+      <button class="themeButton" onclick="changeColor()"></button>
+    </div>
+
+    <div class="auth"></div>
+  </aside>
+
+  <div id="map"></div>
+</div>
+
+<div id="modal" class="modal hidden"></div>
+
+<!-- ПРАВИЛЬНЫЙ СКРИПТ for MapGL -->
+<script src="https://mapgl.2gis.com/api/js/v1"></script>
+<script src="app.js"></script>
+</body>
+</html>
